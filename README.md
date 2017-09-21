@@ -28,13 +28,19 @@ Test RMSE
 
 
 Network: 512 - 1
+
 Baseline: 0.603218145523
+
 Our: 0.247205531803
 
 Deep Network: 512-512-1
+
 Baseline: 0.273539712177
+
 Our: 0.229833459531
 
 Very Deep Network: 512-512-512-1
-Baseline: 
-Our:
+
+Baseline: 0.269470231901
+
+Our: 0.228834157746
