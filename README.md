@@ -58,5 +58,30 @@ Test RMSE: 17.9540099251 - baseline - 500 iterations - Networks: 512-512-2-1- us
 
 Test RMSE: 19.1539551824 - Our - 500 iterations - Networks: 512-512-2-1-Gaussian using normalization by deviding 150
 
+----------------------
+experiments 23 Sept 2017
+
+
+baseline: Test RMSE: 0.172326471031
+
+our: 10 iterations: Test RMSE: 0.178795830403 - pseudo inputs: 500
+
+our: 50 iterations: Test RMSE: 0.172099986995 - pseudo inputs: 500
+
+our: 500 iterations: Test RMSE: Test RMSE: 0.174414185187 - pseudo inputs 500 - from scratch
+
+our: 100 iterations: Test RMSE: 0.172564653068 - pseudo inputs: 500
+
+our: 100 iterations: Test RMSE: 0.176254250821 - pseudo inputs: 500 - instead of 5 -> using 10 in algorithm 2 for minibatch
+
+
+our: 50 iterations: Test RMSE: 0.172149085512 - pseudo inputs: 500
+
+
+our: 50 iterations: Test RMSE: 0.18063654052 - pseudo inputs: 500 -> minibatch: 32 - failed toan tap
+
+
+our: 100 iterations: Test RMSE: 0.172278005018 - pseudo inputs: 500
+
 
 
