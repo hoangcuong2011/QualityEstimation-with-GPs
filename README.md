@@ -44,3 +44,19 @@ Very Deep Network: 512-512-512-1
 Baseline: 0.269470231901
 
 Our: 0.228834157746
+
+
+Test RMSE: 17.9197881485 - BASELINE - 50 iterations - Networks: 512-512-1
+
+Test RMSE: 17.7667294786 - OUR - 500 iterations - Networks: 512-512-1-GPs
+
+Test RMSE: 17.8275642043 - OUR - 50 iterations - Networks: 512-512-1-GPs - Trained from Baseline 50 as check points
+
+Test RMSE: 17.7436869178 - baseline - 500 iterations - Networks: 512-512-1- using normalization by deviding 150
+
+Test RMSE: 17.9540099251 - baseline - 500 iterations - Networks: 512-512-2-1- using normalization by deviding 150
+
+Test RMSE: 19.1539551824 - Our - 500 iterations - Networks: 512-512-2-1-Gaussian using normalization by deviding 150
+
+
+
