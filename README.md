@@ -102,15 +102,21 @@ training NN with many iterations seems pretty helpful:
 50 iterations: RMSE: 0.173979286729
 250 iterations: RMSE: 0.171972987861
 
+
+---- for GPS
+
+Sparse GPs seem pretty helpful regarding to scalability.
+
+1. Pseudo inducing points = 1 -> 0.18207436990727555
+2. Pseudo inducing points = 10 -> 0.17422071640407702
+3. Pseudo inducing points = 100 -> 0.17135238660272237
+4. Pseudo inducing points = 1000 -> 0.17026061242154458
+
 ------ 25 sept 2017 -----
 
 baseline: 512-512-2-1 Test RMSE: 0.171972987861 - 250 iterations
 
 our: 512-512-2-GP and train from scratch: test RMSE: 0.31018739957 ( failed toan tap) - 50 iterations - pseudo inputs: 500
-
-
-
-
 
 Different kernel functions do not contribute such a significant difference in result, at least from my experiment with quality estimation.
 
@@ -123,5 +129,5 @@ neural network (baseline: 512-512-1): 0.190945125175 - both 500-50 iterations
 neural network (baseline: 128-128-1): 0.187025368196 - 500 iterations
 
 
-
+-------
 
