@@ -102,8 +102,8 @@ training NN with many iterations seems pretty helpful:
 50 iterations: RMSE: 0.173979286729
 250 iterations: RMSE: 0.171972987861
 
+------ 25 sept 2017 -----
 
+baseline: 512-512-2-1 Test RMSE: 0.171972987861 - 250 iterations
 
-
-
-
+our: 512-512-2-GP and train from scratch: test RMSE: 0.31018739957 ( failed toan tap) - 50 iterations - pseudo inputs: 500
