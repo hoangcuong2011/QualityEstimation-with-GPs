@@ -107,3 +107,21 @@ training NN with many iterations seems pretty helpful:
 baseline: 512-512-2-1 Test RMSE: 0.171972987861 - 250 iterations
 
 our: 512-512-2-GP and train from scratch: test RMSE: 0.31018739957 ( failed toan tap) - 50 iterations - pseudo inputs: 500
+
+
+
+
+
+Different kernel functions do not contribute such a significant difference in result, at least from my experiment with quality estimation.
+
+I used validdata.txt as training dataset
+
+maternity kernel: 0.18460638297956458
+RBF: 0.1837610677100123
+
+neural network (baseline: 512-512-1): 0.190945125175 - both 500-50 iterations
+neural network (baseline: 128-128-1): 0.187025368196 - 500 iterations
+
+
+
+
