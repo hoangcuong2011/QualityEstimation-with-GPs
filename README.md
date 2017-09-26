@@ -179,3 +179,19 @@ deep models seem do not help much for the task:
 
 ('Test RMSE 1:', 0.19478574370120291, 'dgp5')
 
+
+('Test RMSE 100:', 0.1713069200547977)
+
+('Test RMSE 100:', 0.1750586335976152, 'dgp1 (sgp+adam)')
+
+('Test RMSE 100:', 0.17379188690851397, 'dgp2')
+
+('Test RMSE 100:', 0.17329473990766442, 'dgp3')
+
+
+('Test RMSE:', 0.17045979565507988)
+
+('Test RMSE 500:', 0.17384460173684579, 'dgp1 (sgp+adam)')
+
+('Test RMSE 500:', 0.17514294647823064, 'dgp2')
+
