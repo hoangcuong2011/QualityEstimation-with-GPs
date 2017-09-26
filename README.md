@@ -195,3 +195,14 @@ deep models seem do not help much for the task:
 
 ('Test RMSE 500:', 0.17514294647823064, 'dgp2')
 
+
+
+ADAM with 20000 iterations
+
+('Test RMSE 100 with 20000 iterations:', 0.17140373335968928, 'dgp1 (sgp+adam)')
+
+('Test RMSE 100 with 20000 iterations:', 0.17282496214523227, 'dgp2')
+
+('Test RMSE 100 with 20000 iterations:', 0.17364298469637351, 'dgp3')
+
+('Test RMSE 100 with 20000 iterations:', 0.17219207311234672, 'dgp4') 
