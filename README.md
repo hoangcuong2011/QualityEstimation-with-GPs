@@ -1,12 +1,15 @@
 # QualityEstimation-with-GPs
 
 Dropout: 0.5
+
 batch_size = 128
+
 epochs = 500
+
 model.compile(optimizer=Adam(1e-4), loss=loss)
 
 gp = GP(hyp={
-                'lik': np.log(0.3),
+            'lik': np.log(0.3),
                 'mean': [],
                 'cov': [[0.5], [1.0]],
             },
@@ -62,12 +65,15 @@ Test RMSE: 19.1539551824 - Our - 500 iterations - Networks: 512-512-2-1-Gaussian
 experiments 23 Sept 2017
 
 baseline: Test RMSE: 0.172326471031
+
 our: 10 iterations: Test RMSE: 0.178795830403 - pseudo inputs: 500
+
 our: 50 iterations: Test RMSE: 0.172099986995 - pseudo inputs: 500
 
 our: 500 iterations: Test RMSE: Test RMSE: 0.174414185187 - pseudo inputs 500 - from scratch
 
 our: 100 iterations: Test RMSE: 0.172564653068 - pseudo inputs: 500
+
 our: 100 iterations: Test RMSE: 0.176254250821 - pseudo inputs: 500 - instead of 5 -> using 10 in algorithm 2 for minibatch
 
 
@@ -90,16 +96,24 @@ Some lessons:
 
 
 1. over-training (i.e. having too many iterations) hurts the performance. 50 seems ok
+
 2. having too many pseudo inputs is really expensive, yet does not help much. 500 seems to be OK.
+
 3. using the initial weights trained from NN seems pretty helpful.
+
 4. 128 seems a good mini-batch number
+
 5. 5 seems a good iterations regarding to algortihm 2 (gp_n_iter)
+
 
 -- for the baseline:
 
 training NN with many iterations seems pretty helpful: 
+
 5 itertaions:  RMSE: 18.3
+
 50 iterations: RMSE: 0.173979286729
+
 250 iterations: RMSE: 0.171972987861
 
 
@@ -108,10 +122,15 @@ training NN with many iterations seems pretty helpful:
 Sparse GPs seem pretty helpful regarding to scalability.
 
 1. Pseudo inducing points = 1 -> 0.18207436990727555
+
 2. Pseudo inducing points = 10 -> 0.17422071640407702
+
 3. Pseudo inducing points = 100 -> 0.17135238660272237
+
 4. Pseudo inducing points = 500 -> 0.17045979565507988
+
 5. Pseudo inducing points = 1000 -> 0.17026061242154458
+
 
 ------ 25 sept 2017 -----
 
@@ -127,6 +146,7 @@ maternity kernel: 0.18460638297956458
 RBF: 0.1837610677100123
 
 neural network (baseline: 512-512-1): 0.190945125175 - both 500-50 iterations
+
 neural network (baseline: 128-128-1): 0.187025368196 - 500 iterations
 
 
@@ -135,17 +155,27 @@ neural network (baseline: 128-128-1): 0.187025368196 - 500 iterations
 deep models seem do not help much for the task:
 
 ('Test RMSE:', 0.17422071640407702)
+
 ('Test RMSE 10:', 0.17892371045641844, 'dgp1 (sgp+adam)')
+
 ('Test RMSE 10:', 0.18064529673938259, 'dgp2')
+
 ('Test RMSE 10:', 0.18077692794954436, 'dgp3')
+
 ('Test RMSE 10:', 0.17599512661905775, 'dgp4')
+
 ('Test RMSE 10:', 0.17726577232048354, 'dgp5')
 
 
 ('Test RMSE:', 0.18207436990727555)
+
 ('Test RMSE 1:', 0.19461921459170606, 'dgp1 (sgp+adam)')
+
 ('Test RMSE 1:', 0.19486159103804393, 'dgp2')
+
 ('Test RMSE 1:', 0.19488038574956651, 'dgp3')
+
 ('Test RMSE 1:', 0.19482974425709446, 'dgp4')
+
 ('Test RMSE 1:', 0.19478574370120291, 'dgp5')
 
