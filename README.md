@@ -110,7 +110,8 @@ Sparse GPs seem pretty helpful regarding to scalability.
 1. Pseudo inducing points = 1 -> 0.18207436990727555
 2. Pseudo inducing points = 10 -> 0.17422071640407702
 3. Pseudo inducing points = 100 -> 0.17135238660272237
-4. Pseudo inducing points = 1000 -> 0.17026061242154458
+4. Pseudo inducing points = 500 -> 0.17045979565507988
+5. Pseudo inducing points = 1000 -> 0.17026061242154458
 
 ------ 25 sept 2017 -----
 
@@ -129,5 +130,22 @@ neural network (baseline: 512-512-1): 0.190945125175 - both 500-50 iterations
 neural network (baseline: 128-128-1): 0.187025368196 - 500 iterations
 
 
--------
+------- 26 sept 2017 ------
+
+deep models seem do not help much for the task:
+
+('Test RMSE:', 0.17422071640407702)
+('Test RMSE 10:', 0.17892371045641844, 'dgp1 (sgp+adam)')
+('Test RMSE 10:', 0.18064529673938259, 'dgp2')
+('Test RMSE 10:', 0.18077692794954436, 'dgp3')
+('Test RMSE 10:', 0.17599512661905775, 'dgp4')
+('Test RMSE 10:', 0.17726577232048354, 'dgp5')
+
+
+('Test RMSE:', 0.18207436990727555)
+('Test RMSE 1:', 0.19461921459170606, 'dgp1 (sgp+adam)')
+('Test RMSE 1:', 0.19486159103804393, 'dgp2')
+('Test RMSE 1:', 0.19488038574956651, 'dgp3')
+('Test RMSE 1:', 0.19482974425709446, 'dgp4')
+('Test RMSE 1:', 0.19478574370120291, 'dgp5')
 
