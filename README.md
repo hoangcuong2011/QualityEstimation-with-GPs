@@ -188,6 +188,10 @@ deep models seem do not help much for the task:
 
 ('Test RMSE 100:', 0.17329473990766442, 'dgp3')
 
+('Test RMSE 100:', 0.1744132242174119, 'dgp4') 
+
+('Test RMSE 100:', 0.1740911970732055, 'dgp5')
+
 
 ('Test RMSE:', 0.17045979565507988)
 
@@ -206,3 +210,6 @@ ADAM with 20000 iterations
 ('Test RMSE 100 with 20000 iterations:', 0.17364298469637351, 'dgp3')
 
 ('Test RMSE 100 with 20000 iterations:', 0.17219207311234672, 'dgp4') 
+
+('Test RMSE 100 with 20000 iterations:', 0.17335594483617317, 'dgp5')
+
