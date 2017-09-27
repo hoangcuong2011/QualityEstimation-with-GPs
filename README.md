@@ -1,3 +1,13 @@
+Task to do:
+- spectral mixture
+- matern
+- cnn
+- rnn 
+- resnet
+
+
+
+
 # QualityEstimation-with-GPs
 
 Dropout: 0.5
