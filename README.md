@@ -244,4 +244,10 @@ pseudo inputs: 100
 
 ('Test RMSE RBF 100:',  0.1713069200547977)
 
+('Test RMSE Linear 100:',  0.2348395696106011)
+
+
+
+
+
 
