@@ -231,6 +231,11 @@ ADAM with 20000 iterations with noise
 
 ('Test RMSE 100 with 20000 iterations:', 0.17368592962542548, 'dgp3')
 
+('Test RMSE 100 with 20000 iterations:', 0.17389280085626924, 'dgp4')
+
+('Test RMSE 100 with 20000 iterations:', 0.17421086259811297, 'dgp5')
+
+
 --------
 
 pseudo inputs: 100
@@ -246,8 +251,23 @@ pseudo inputs: 100
 
 ('Test RMSE Linear 100:',  0.2348395696106011)
 
+Periodic - 0.18517560283550363
+
+RBF * Periodic - 0.17134235343444676
+
+RBF + Periodic - 0.17130237134630183
+
+RBF + RBF - 0.17125735161416744
+
+RBF * RBF - 0.17132585503045419
+
+RBF * Linear - 0.17203751042779605
+
+RBF + Linear 0.17122192777895939
 
 
+RBF_17K_Plus: 0.17815446001528001
 
+RBF_17K_dot: 0.17136592066520157
 
-
+RBF * Matern52: 0.1712109978294574
