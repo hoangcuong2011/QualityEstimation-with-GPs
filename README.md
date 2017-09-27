@@ -213,3 +213,12 @@ ADAM with 20000 iterations
 
 ('Test RMSE 100 with 20000 iterations:', 0.17335594483617317, 'dgp5')
 
+
+ADAM with 20000 iterations with noise
+
+('Test RMSE 100 with 20000 iterations:', 0.1714037380048036, 'dgp1 (sgp+adam)')
+
+('Test RMSE 100 with 20000 iterations:', 0.17184042425885582, 'dgp2')
+
+('Test RMSE 100 with 20000 iterations:', 0.17368592962542548, 'dgp3')
+
