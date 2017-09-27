@@ -1,6 +1,5 @@
 Task to do:
 - spectral mixture
-- matern
 - cnn
 - rnn 
 - resnet
@@ -231,4 +230,18 @@ ADAM with 20000 iterations with noise
 ('Test RMSE 100 with 20000 iterations:', 0.17184042425885582, 'dgp2')
 
 ('Test RMSE 100 with 20000 iterations:', 0.17368592962542548, 'dgp3')
+
+--------
+
+pseudo inputs: 100
+
+
+('Test RMSE Matern52:', 0.17117225268902908)
+
+('Test RMSE Matern32:', 0.17133212623686989)
+
+('Test RMSE Matern12:', 0.17340097051503989)
+
+('Test RMSE RBF 100:',  0.1713069200547977)
+
 
