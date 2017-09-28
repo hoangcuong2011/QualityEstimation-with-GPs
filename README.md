@@ -309,7 +309,11 @@ wider and deeper network:
 with deep learning kernel:
 
 Baseline: 512 - 1
-Our 50 iterations: 0.172780731643
+
+Our 500 iterations: 0.172780731643
+
+Our 500 iterations from scratch: 0.173187880796
+
 
 
 wider:
