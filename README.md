@@ -254,13 +254,21 @@ pseudo inputs: 100
 Periodic - 0.18517560283550363
 
 Polynomial (Degree = 12) - 0.24370107610661879
+
 Polynomial (Degree = 9) - 0.17095645232169518
+
 Polynomial (Degree = 7) - 0.17103013855422489
+
 Polynomial (Degree = 6) - 0.17082216986546059
+
 Polynomial (Degree = 5) - 0.17098419170801335
+
 Polynomial (Degree = 4) - 0.17082629603808605
+
 Polynomial (Degree = 3) - 0.17224442491626751
+
 Polynomial (Degree = 2) - 0.17500370793167785
+
 
 
 RBF * Periodic - 0.17134235343444676
