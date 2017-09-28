@@ -310,7 +310,10 @@ with deep learning kernel:
 
 Baseline: 512 - 1
 
-Our 500 iterations: 0.172780731643
+Our 500 iterations (var loss): 0.172780731643
+
+Our 500 iterations (val MSE): 0.172792447103 
+
 
 Our 500 iterations from scratch: 0.173187880796
 
