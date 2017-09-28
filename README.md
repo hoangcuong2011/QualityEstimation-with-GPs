@@ -1,10 +1,4 @@
 Task to do:
-- spectral mixture
-- cnn
-- rnn 
-- resnet
-
-
 
 
 # QualityEstimation-with-GPs
@@ -348,8 +342,11 @@ ARD = false
 
 
 MLP - 512 - 500 iterations - 0.17462398879
+
 Sparse: 1 - 0.1776243390403813
+
 Sparse: 10 - 0.17493865915681467
+
 Sparse: 100 - 0.1739678798553802
 
 
