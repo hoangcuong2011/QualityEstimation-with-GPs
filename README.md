@@ -269,6 +269,10 @@ Polynomial (Degree = 3) - 0.17224442491626751
 
 Polynomial (Degree = 2) - 0.17500370793167785
 
+RBF * Poly (Degree 4): 0.17130055243657658
+
+RBF + Poly (Degree 4): 0.1707790610698586
+
 
 
 RBF * Periodic - 0.17134235343444676
