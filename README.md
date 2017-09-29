@@ -341,7 +341,10 @@ ARD = false
 --------------------------------------------- EN to DE 2017 -----------------------------------------
 
 
-MLP - 512 - 500 iterations - 0.17462398879
+MLP - 512 - 250 iterations - 0.17462398879
+
+MLP - 512 - 512 - 512 - 1 - 250 iterations - 0.175116179608
+MLP - 512 - 512 - 512 - 512 - 1 - 250 iterations - 0.174813963378
 
 Sparse: 1 - 0.1776243390403813
 
@@ -349,6 +352,41 @@ Sparse: 10 - 0.17493865915681467
 
 Sparse: 100 - 0.1739678798553802
 
+Sparse: 100 + deep learning kernel 0.173534931882
 
+Sparse: 100 + deep learning kernel but from scratch 0.173541573892
 
+Deep Gaussian Pocesses
+
+('Test RMSE:', 0.1776243390403813)
+
+('Test RMSE 1:', 0.17765471411164327, 'dgp1 (sgp+adam)')
+
+('Test RMSE 1:', 0.1771819473212751, 'dgp2')
+
+('Test RMSE 1:', 0.17698403453792905, 'dgp3')
+
+('Test RMSE 1:', 0.17751157787918487, 'dgp4')
+
+('Test RMSE 1:', 0.17655619411409237, 'dgp5')
+
+('Test RMSE:', 0.17493865915681467)
+
+('Test RMSE 10:', 0.1747557179044521, 'dgp1 (sgp+adam)')
+
+('Test RMSE 10:', 0.17468796110874665, 'dgp2')
+
+('Test RMSE 10:', 0.17463573428914381, 'dgp3')
+
+('Test RMSE 10:', 0.1752323374203332, 'dgp4')
+
+('Test RMSE 10:', 0.17543809904999294, 'dgp5')
+
+('Test RMSE:', 0.1739678798553802)
+
+('Test RMSE 100:', 0.17401374731410588, 'dgp1 (sgp+adam)')
+
+('Test RMSE 100:', 0.17398644073617428, 'dgp2')
+
+LSTM_Baseline.py batch_size128epochs250_size512: RMSE - 0.19548947809
 
