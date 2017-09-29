@@ -337,14 +337,33 @@ ARD = false
 
 500 - 0.17414626111351064
 
+LSTM_Baseline.py batch_size128epochs250_size512: RMSE - 0.19548947809
+
+parameters
+model.kern.lengthscales transform:+ve prior:None
+
+[  0.9060063 0.89626782   8.17821839   9.76969173   1.63464558
+  17.87426877  11.02483475   9.12596714  54.91926957  12.26097875
+55.00851352  53.58659854  64.0630409    5.46488718   6.82687469
+   8.72636505  12.63110322]
+   
+   model.kern.variance transform:+ve prior:None
+   [ 0.09477398]
+   model.likelihood.variance transform:+ve prior:None
+   [ 0.03135338]
 
 --------------------------------------------- EN to DE 2017 -----------------------------------------
 
 
 MLP - 512 - 250 iterations - 0.17462398879
-
+MLP - 512 - 512 - 1 - 250 iterations - 0.174724199213
 MLP - 512 - 512 - 512 - 1 - 250 iterations - 0.175116179608
 MLP - 512 - 512 - 512 - 512 - 1 - 250 iterations - 0.174813963378
+
+MLP - 1024 - 1 - 250 iterations: 0.174626321568
+
+MLP - 2048 - 1 - 250 iterations: 0.173763737251
+
 
 Sparse: 1 - 0.1776243390403813
 
@@ -352,11 +371,15 @@ Sparse: 10 - 0.17493865915681467
 
 Sparse: 100 - 0.1739678798553802
 
+Sparse: 500 - 0.17387987575208969
+
 Sparse: 100 + deep learning kernel 0.173534931882
 
 Sparse: 100 + deep learning kernel but from scratch 0.173541573892
 
 Deep Gaussian Pocesses
+
+
 
 ('Test RMSE:', 0.1776243390403813)
 
@@ -388,5 +411,11 @@ Deep Gaussian Pocesses
 
 ('Test RMSE 100:', 0.17398644073617428, 'dgp2')
 
-LSTM_Baseline.py batch_size128epochs250_size512: RMSE - 0.19548947809
 
+Polynomial (Degree = 2) - 0.17418068420880428
+
+Polynomial (Degree = 3) - 0.17411065149787217
+
+Polynomial (Degree = 4) - 0.17412721980819795
+
+Polynomial (Degree = 5) - 0.17412888655244219
