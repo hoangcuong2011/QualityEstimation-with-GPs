@@ -352,12 +352,33 @@ model.kern.lengthscales transform:+ve prior:None
    model.likelihood.variance transform:+ve prior:None
    [ 0.03135338]
 
+Reduing number of features:
+
+('Test RMSE 100 for Sparse Model ARD:', 0.17120104261380131)
+
+detailed parameters for 500
+model.kern.lengthscales transform:+ve prior:None
+[  0.90805023   0.90086019   8.19019887   9.80181879   1.63185332
+  18.31155775  10.48634048   8.53396368  11.65252109   5.47430326
+   6.89946306   8.94510802  12.70521612]
+
+model.kern.variance transform:+ve prior:None
+[ 0.09850708]
+
+model.likelihood.variance transform:+ve prior:None
+[ 0.03130402] 
+
+('Test RMSE 500 for Sparse Model ARD:', 0.17035261704836535)
+
 --------------------------------------------- EN to DE 2017 -----------------------------------------
 
 
 MLP - 512 - 250 iterations - 0.17462398879
+
 MLP - 512 - 512 - 1 - 250 iterations - 0.174724199213
+
 MLP - 512 - 512 - 512 - 1 - 250 iterations - 0.175116179608
+
 MLP - 512 - 512 - 512 - 512 - 1 - 250 iterations - 0.174813963378
 
 MLP - 1024 - 1 - 250 iterations: 0.174626321568
