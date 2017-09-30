@@ -465,3 +465,5 @@ Polynomial (Degree = 3) - 0.17411065149787217
 Polynomial (Degree = 4) - 0.17412721980819795
 
 Polynomial (Degree = 5) - 0.17412888655244219
+
+Linear - 0.29463945272192954
