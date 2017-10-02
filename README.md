@@ -205,7 +205,9 @@ deep models seem do not help much for the task:
 
 ('Test RMSE 2000:', 0.17015620648697957)
 
+('Test RMSE 2000:', 0.17013366883571904)
 
+----------------------------------------------
 
 ADAM with 20000 iterations
 
@@ -492,4 +494,20 @@ Sparse: 100: 0.20256593766647818
 ('Test RMSE 1:', 0.19473579999340698)
 
 ('Test RMSE 1000:', 0.20235635145549452)
+
+MLP + GPs: 0.205873623406
+
+MLP + GPs: 0.196797476351 - from scratch
+
+Deep GPs
+
+('Test RMSE 100:', 0.20127682571441879, 'dgp1 (sgp+adam)') 
+
+('Test RMSE 100:', 0.20233598310362771, 'dgp2') 
+
+('Test RMSE 100:', 0.20202339735969685, 'dgp3') 
+
+
+
+
 
