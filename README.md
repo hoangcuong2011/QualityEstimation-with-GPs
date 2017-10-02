@@ -510,4 +510,40 @@ Deep GPs
 ('Test RMSE 100:', 0.20224315229721748, 'dgp4') 
 
 
+----------------WMT 2015 - spanish --------------
+
+
+('Test RMSE 100:', 0.18480514750284643) 
+
+('Test RMSE 500:', 0.18445117171328618)
+
+
+('Test RMSE 10:', 0.18476864140316387) 
+
+MLP: Test RMSE: 0.184830029689
+
+*adaptation* with Spanish:
+
+train, valid: english-spanish
+
+test: english-german
+
+MLP: Test RMSE: 0.234593462258
+
+
+('Test RMSE 100:', 0.21255217587251546)
+
+('Test RMSE 500:', 0.21918383628749555) 
+
+-------------------------------------
+
+german to english adaptation to english to german
+
+MLP: 0.249613619354
+
+('Test RMSE for Sparse Model:', 0.21124365903641651)
+
+
+
+
 
