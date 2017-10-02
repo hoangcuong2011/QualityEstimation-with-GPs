@@ -412,9 +412,14 @@ Sparse: 1000 - 0.17377791914385535
 
 Sparse: 2000 - 0.1737636162882934
 
+Sparse: 4000 - 0.17405597439575526
+
 Sparse: 100 + deep learning kernel 0.173534931882
 
 Sparse: 100 + deep learning kernel but from scratch 0.173541573892
+
+
+Sparse: 100 + plus additive (1,2),  (3, 4), (16, 17): 0.1735something
 
 Deep Gaussian Pocesses
 
