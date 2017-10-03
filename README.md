@@ -560,6 +560,14 @@ Deep GPs
 MLP: Test RMSE: 0.184830029689
 
 
+Deep learning kernel:
+
+Test RMSE: 0.18565758114
+
+Test RMSE: 0.185417706629
+
+-------------------------------------------------
+
 
 *adaptation* with Spanish:
 
@@ -586,7 +594,10 @@ MLP: Test RMSE: 0.234593462258
 
 Deep learning kernel:
 
-is running thunder 1
+
+Test RMSE: 0.199293826455 (from scratch)
+
+Test RMSE: 0.207473532485
 
 
 
@@ -607,4 +618,14 @@ Test RMSE: 0.219251055049 - from scratch
 
 
 Deep GPs - is running thunder 5.
+
+('Test RMSE 10:', 0.21032053974189471, 'dgp1 (sgp+adam)')
+
+('Test RMSE 10:', 0.22188420491117991, 'dgp2') 
+
+('Test RMSE 10:', 0.22457417915245484, 'dgp3') 
+
+
+
+
 
