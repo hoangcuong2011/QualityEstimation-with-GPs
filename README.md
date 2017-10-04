@@ -629,3 +629,21 @@ Deep GPs - is running thunder 5.
 
 
 
+
+
+-------------------
+
+Random forest:
+
+De-En: 0.171028683166
+
+En-De: 0.174945230669
+
+En-Spanish: 0.185372344454
+
+En-Spanish: adaptation 0.233397236021
+
+De-En and adaptation: 0.190948698564
+
+WMT 2016 and adaptation: 0.191550751431
+
