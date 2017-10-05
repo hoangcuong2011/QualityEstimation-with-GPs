@@ -1,5 +1,6 @@
 
 import numpy as np
+import copy
 from sklearn.gaussian_process import GaussianProcess
 from matplotlib import pyplot as pl
 
@@ -55,6 +56,35 @@ from sklearn import tree
 
 param_grid = {'max_depth': [None, 1, 2, 3, 4], 'min_samples_split': [2, 3, 4, 5]}
 
+
+def report(grid_scores, n_top=3):
+    """Report top n_top parameters settings, default n_top=3.
+
+    Args
+    ----
+    grid_scores -- output from grid or random search
+    n_top -- how many to report, of top models
+
+    Returns
+    -------
+    top_params -- [dict] top parameter settings found in
+                  search
+    """
+    top_scores = sorted(grid_scores,
+                        key=itemgetter(1),
+                        reverse=True)[:n_top]
+    for i, score in enumerate(top_scores):
+        print("Model with rank: {0}".format(i + 1))
+        print(("Mean validation score: "
+               "{0:.3f} (std: {1:.3f})").format(
+               score.mean_validation_score,
+               np.std(score.cv_validation_scores)))
+        print("Parameters: {0}".format(score.parameters))
+        print("")
+
+    return top_scores[0].parameters
+
+
 def standardize_data(X_train, X_test, X_valid):
     X_mean = np.mean(X_train, axis=0)
     X_std = np.std(X_train, axis=0)
@@ -90,8 +120,11 @@ X_test = dataset[:,0:17]
 
 y_test = dataset[:,17]
 
+X_train_root = X_train
 
-X_train, X_test, X_valid = standardize_data(X_train, X_test, X_valid)
+X_valid_root = X_valid
+
+X_train, X_test, X_valid = standardize_data(copy.deepcopy(X_train_root), X_test, copy.deepcopy(X_valid_root))
 
 
 X = X_train
@@ -110,32 +143,6 @@ start = time()
 
 grid_search.fit(X, y)
 
-def report(grid_scores, n_top=3):
-    """Report top n_top parameters settings, default n_top=3.
-
-    Args
-    ----
-    grid_scores -- output from grid or random search
-    n_top -- how many to report, of top models
-
-    Returns
-    -------
-    top_params -- [dict] top parameter settings found in
-                  search
-    """
-    top_scores = sorted(grid_scores,
-                        key=itemgetter(1),
-                        reverse=True)[:n_top]
-    for i, score in enumerate(top_scores):
-        print("Model with rank: {0}".format(i + 1))
-        print(("Mean validation score: "
-               "{0:.3f} (std: {1:.3f})").format(
-               score.mean_validation_score,
-               np.std(score.cv_validation_scores)))
-        print("Parameters: {0}".format(score.parameters))
-        print("")
-
-    return top_scores[0].parameters
 
 
 print(("\nGridSearchCV took {:.2f} "
@@ -166,7 +173,7 @@ X_test = dataset[:,0:17]
 y_test = dataset[:,17]
 
 
-X_train, X_test, X_valid = standardize_data(X_train, X_test, X_valid)
+X_train, X_test, X_valid = standardize_data(X_train_root, X_test, X_valid_root)
 
 
 y_multirf = grid_search.predict(X_test)
