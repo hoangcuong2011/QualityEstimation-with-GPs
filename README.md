@@ -641,9 +641,26 @@ En-De: 0.174945230669
 
 En-Spanish: 0.185372344454
 
-En-Spanish: adaptation 0.233397236021
+En-Spanish: adaptation 0.195997505137
 
 De-En and adaptation: 0.190948698564
 
-WMT 2016 and adaptation: 0.191550751431
+WMT 2016 and adaptation: 0.189763546978
+
+
+---------------------
+Decision Tree
+
+WMT 2015 - spanish - 0.187095134667
+
+WMT 2017 De-En: 0.184066768475
+
+WMT 2017 En-DE: 0.178836140506
+
+WMT 2017 DE-EN and adaptation: 0.214170907099
+
+WMT 2016 Adaptation: 0.190259731417
+
+WMT 2015 - Spanish adaptation - 0.196092144759
+
 
