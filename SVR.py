@@ -1,6 +1,7 @@
 # Author: Vincent Dubourg <vincent.dubourg@gmail.com>
 #         Jake Vanderplas <vanderplas@astro.washington.edu>
 # Licence: BSD 3 clause
+import copy
 
 import numpy as np
 from sklearn.gaussian_process import GaussianProcess
@@ -85,8 +86,15 @@ dataset = np.loadtxt("validdata.txt", delimiter=",")
 
 X_valid = dataset[:,0:17]
 y_valid = dataset[:,17]
-X_train, X_test, X_valid = standardize_data(X_train, X_test, X_valid)
-    
+
+
+X_train_root = X_train
+
+X_valid_root = X_valid
+
+X_train, X_test, X_valid = standardize_data(copy.deepcopy(X_train_root), X_test, copy.deepcopy(X_valid_root))
+
+
 
 X = X_train
 Y = y_train.reshape(-1, 1)
@@ -94,9 +102,8 @@ Y = y_train.reshape(-1, 1)
 Xs, Ys = X_test, y_test.reshape(-1, 1)
 
 
-train_size = 100
 svr = GridSearchCV(SVR(kernel='rbf', gamma=0.1), cv=5,
-                   param_grid={"C": [1e0, 1e1, 1e2, 1e3],
+                   param_grid={"C": [1e0, 1e1, 1e2, 1e3, 1e-1, 1e-2, 1e-3],
                                "gamma": np.logspace(-2, 2, 5)})
 
 kr = GridSearchCV(KernelRidge(kernel='rbf', gamma=0.1), cv=5,
@@ -119,6 +126,43 @@ print("KRR complexity and bandwidth selected and model fitted in %.3f s"
 
 sv_ratio = svr.best_estimator_.support_.shape[0] / train_size
 print("Support vector ratio: %.3f" % sv_ratio)
+
+t0 = time.time()
+y_svr = svr.predict(X_test)
+rmse_predict = RMSE(y_test.reshape(-1,1), y_svr)
+
+print(rmse_predict)
+svr_predict = time.time() - t0
+print("SVR prediction for %d inputs in %.3f s"
+      % (X_test.shape[0], svr_predict))
+
+t0 = time.time()
+y_kr = kr.predict(X_test)
+kr_predict = time.time() - t0
+print("KRR prediction for %d inputs in %.3f s"
+      % (X_test.shape[0], kr_predict))
+
+rmse_predict = RMSE(y_test.reshape(-1,1), y_kr)
+
+print(rmse_predict)
+
+
+
+
+
+
+dataset = np.loadtxt("testdata.txt.en_de", delimiter=",")
+
+
+X_test = dataset[:,0:17]
+
+y_test = dataset[:,17]
+
+
+X_train, X_test, X_valid = standardize_data(X_train_root, X_test, X_valid_root)
+
+
+
 
 t0 = time.time()
 y_svr = svr.predict(X_test)
