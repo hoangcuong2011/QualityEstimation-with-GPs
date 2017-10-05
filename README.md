@@ -664,3 +664,26 @@ WMT 2016 Adaptation: 0.190259731417
 WMT 2015 - Spanish adaptation - 0.196092144759
 
 
+
+
+----------------------
+Relevance Vector Machine
+
+WMT 2015 Spanish 0.184874995567
+
+Spanish Adaptation 0.211766504431
+
+WMT 2017 De-En: 0.175447055682
+
+WMT 2017 DE-EN and adaptation: 0.219236638399?
+
+WMT 2016 Adaptation: 0.198783201642
+
+
+---------------
+GradientBoostingRegressor
+
+
+WMT 2015 Spanish 0.184946787674
+
+WMT 2015 Spanish Adaptation 0.200631416515
