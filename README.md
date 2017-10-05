@@ -679,6 +679,7 @@ WMT 2017 DE-EN and adaptation: 0.219236638399?
 
 WMT 2016 Adaptation: 0.198783201642
 
+WMT 2017 En-De: 0.175761239079
 
 ---------------
 GradientBoostingRegressor
