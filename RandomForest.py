@@ -1,6 +1,9 @@
+
 # Author: Vincent Dubourg <vincent.dubourg@gmail.com>
 #         Jake Vanderplas <vanderplas@astro.washington.edu>
 # Licence: BSD 3 clause
+
+import copy
 
 import numpy as np
 from sklearn.gaussian_process import GaussianProcess
@@ -72,6 +75,8 @@ np.random.seed(1)
 dataset = np.loadtxt("traindata.txt", delimiter=",") 
 X_train = dataset[:,0:17]
 y_train = dataset[:,17]
+
+
 dataset = np.loadtxt("testdata.txt", delimiter=",")
 
 
@@ -82,7 +87,15 @@ dataset = np.loadtxt("validdata.txt", delimiter=",")
 
 X_valid = dataset[:,0:17]
 y_valid = dataset[:,17]
-X_train, X_test, X_valid = standardize_data(X_train, X_test, X_valid)
+
+
+X_train_root = X_train
+
+X_valid_root = X_valid
+
+X_train, X_test, X_valid = standardize_data(copy.deepcopy(X_train_root), X_test, copy.deepcopy(X_valid_root))
+
+
     
 
 X = X_train
@@ -107,6 +120,29 @@ clf.fit(X_train, y_train)
 # regr_rf.fit(X_train, np.ravel(y_train.reshape(-1, 1)))
 
 # Predict on new data
+
+
+
+y_multirf = clf.predict(X_test)
+
+
+rmse_predict = RMSE(y_test.reshape(-1,1), y_multirf)
+
+print(rmse_predict)
+
+
+
+dataset = np.loadtxt("testdata.txt.en_de", delimiter=",")
+
+
+X_test = dataset[:,0:17]
+
+y_test = dataset[:,17]
+
+
+X_train, X_test, X_valid = standardize_data(X_train_root, X_test, X_valid_root)
+
+
 y_multirf = clf.predict(X_test)
 
 
