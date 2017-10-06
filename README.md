@@ -688,3 +688,25 @@ GradientBoostingRegressor
 WMT 2015 Spanish 0.184946787674
 
 WMT 2015 Spanish Adaptation 0.200631416515
+
+WMT 2016 DE-EN adaptation: 0.246633948368
+
+------- SVR ---------
+
+wmt 2017 de-en: 0.177934046869
+
+RIDGE 2017 de-en: 0.174671584826
+
+
+WMT 2015 spanish: 0.184126525764
+
+SVR RIDGE spanish: 0.184615864215
+
+Adaptation SVR DE: 0.226830752555
+
+Adaptation RIDGE DE: 0.211999637328
+
+
+SVR WMT 2016 EN-DE adaptation: 0.202823967738
+
+SVR RIDGE WMT 2016 EN-DE adaptation: 0.205540907673
