@@ -548,8 +548,12 @@ Deep GPs
 ('Test RMSE 100:', 0.20224315229721748, 'dgp4') 
 
 
-----------------WMT 2015 - spanish --------------
+Deep Network Adaptation: 512-1: 21.1433950323
 
+Deep Network Adaptation: 512-512-1: 21.6995136291
+
+
+----------------WMT 2015 - spanish --------------
 
 ('Test RMSE 100:', 0.18480514750284643) 
 
@@ -575,8 +579,26 @@ Deep GPs
 
 ('Test RMSE 10:', 0.18476864140316387) 
 
+
 MLP: Test RMSE: 0.184830029689
 
+Test Adaptation RMSE: 0.234363837146
+
+Deep Network: 512-512-1 - 0.185001231168
+
+Deep Network Adaptation: 512-512-1 - 0.205692874883
+
+Deep Network: 512-512-512-1 - 0.184724029588
+
+Deep Network Adaptation: 512-512-512-1 - 0.205057368213
+
+Deep Network: 512-512-512-512-1 - 0.185154200703
+
+Deep Network Adaptation: 512-512-512-512-1 - 0.204657531766
+
+Deep Network: 512-512-512-512-512-1 - 0.184935222483
+
+Deep Network Adaptation: 512-512-512-512-512-1 - 0.203610873839
 
 Deep learning kernel:
 
@@ -617,8 +639,6 @@ Test RMSE: 0.199293826455 (from scratch)
 
 Test RMSE: 0.207473532485
 
-
-
 -------------------------------------
 
 german to english adaptation to english to german
@@ -626,6 +646,23 @@ german to english adaptation to english to german
 MLP: 0.249613619354
 
 ('Test RMSE for Sparse Model:', 0.21124365903641651)
+
+Deep Network (normal): 512-512-1 - 0.172449183325
+
+Deep Network Adaptation: 512-512-1 - 0.218127110626
+
+Deep Network (normal): 512-512-512-1 - 0.173246190331
+
+Deep Network Adaptation: 512-512-512-1 3layers - 0.228482146115
+
+Deep Network (normal): 512-512-512-512-1 4 layers -0.173109383462
+
+Deep Network Adaptation: 512-512-512-512-1 4layers - 0.22057771895 - 0.223584575035
+
+Deep Network (normal): 512-512-512-512-1 5 layers -0.173039981369 - 0.174571540566
+
+Deep Network Adaptation: 512-512-512-512-1 5layers - 0.213737021682 - 0.218320387075
+
 
 
 Deep learning kernel:
@@ -642,12 +679,6 @@ Deep GPs - is running thunder 5.
 ('Test RMSE 10:', 0.22188420491117991, 'dgp2') 
 
 ('Test RMSE 10:', 0.22457417915245484, 'dgp3') 
-
-
-
-
-
-
 
 -------------------
 
