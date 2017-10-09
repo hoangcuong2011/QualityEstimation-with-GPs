@@ -150,7 +150,8 @@ X_test = dataset[:,0:17]
 
 y_test = dataset[:,17]
 
-X_train, X_test, X_valid = standardize_data(X_train_root, X_test, X_valid_root)    
+X_train, X_test, X_valid = standardize_data(copy.deepcopy(X_train_root), X_test, copy.deepcopy(X_valid_root))
+
 
 Xs2, Ys2 = X_test, y_test.reshape(-1, 1)
 
@@ -159,11 +160,11 @@ Xs2, Ys2 = X_test, y_test.reshape(-1, 1)
 if(1==1):
 	Z_100 = kmeans2(np.array(X), 100, minit='points')[0]
 
-	m_dgp1 = make_dgp(X, Y, Z_100, 1)
-	m_dgp2 = make_dgp(X, Y, Z_100, 2)
-	m_dgp3 = make_dgp(X, Y, Z_100, 3)
-	m_dgp4 = make_dgp(X, Y, Z_100, 4)
-	m_dgp5 = make_dgp(X, Y, Z_100, 5)
+	m_dgp1 = make_dgp(X, Y, copy.deepcopy(Z_100), 1)
+	m_dgp2 = make_dgp(X, Y, copy.deepcopy(Z_100), 2)
+	m_dgp3 = make_dgp(X, Y, copy.deepcopy(Z_100), 3)
+	m_dgp4 = make_dgp(X, Y, copy.deepcopy(Z_100), 4)
+	m_dgp5 = make_dgp(X, Y, copy.deepcopy(Z_100), 5)
 
 
 	for m, name in zip([m_dgp1, m_dgp2, m_dgp3, m_dgp4, m_dgp5], ['dgp1 (sgp+adam)', 'dgp2', 'dgp3', 'dgp4', 'dgp5']):
