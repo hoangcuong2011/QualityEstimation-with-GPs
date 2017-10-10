@@ -293,7 +293,7 @@ RBF_17K_dot: 0.17136592066520157
 
 RBF * Matern52: 0.1712109978294574
 
-
+FULLLLLLLLLLLLLLLLLL MODEL: ('Test RMSE:', 0.17010193413195204)
 
 ---------------
 wider and deeper network:
