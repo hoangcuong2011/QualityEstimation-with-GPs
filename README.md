@@ -548,7 +548,10 @@ Deep GPs
 ('Test RMSE 100:', 0.20224315229721748, 'dgp4') 
 
 
-Deep Network Adaptation: 512-1: 21.1433950323
+Deep Network Adaptation: 512-1: 21.1433950323 - 21.2679994752
+
+
+Deep Network Adaptation: 512-1: 21.1433950323 - 21.2679994752
 
 Deep Network Adaptation: 512-512-1: 21.6995136291
 
@@ -622,6 +625,34 @@ MLP: Test RMSE: 0.234593462258
 ('Test RMSE 500:', 0.21918383628749555) 
 
 
+---final run -...
+
+('Test RMSE 1:', 0.18475441801078751, 'dgp1 (sgp+adam)')
+
+('Test RMSE 1:', 0.21090247614407803, 'dgp1 (sgp+adam)') 
+
+
+('Test RMSE 1:', 0.18485709211550266, 'dgp2')
+
+('Test RMSE 1:', 0.21015237541079659, 'dgp2') 
+
+('Test RMSE 1:', 0.1848285583683611, 'dgp3')
+
+('Test RMSE 1:', 0.21096954957557043, 'dgp3')
+
+
+('Test RMSE 1:', 0.18469350401901369, 'dgp4')
+
+('Test RMSE 1:', 0.21063967703390407, 'dgp4')
+
+
+('Test RMSE 1:', 0.1848695265518879, 'dgp5')
+
+('Test RMSE 1:', 0.21030241345517139, 'dgp5')
+
+-------------------------------
+
+
 ('Test RMSE 100:', 0.21123617187032856, 'dgp1 (sgp+adam)')
 
 ('Test RMSE 100:', 0.21088207981157298, 'dgp2')
@@ -659,9 +690,9 @@ Deep Network (normal): 512-512-512-512-1 4 layers -0.173109383462
 
 Deep Network Adaptation: 512-512-512-512-1 4layers - 0.22057771895 - 0.223584575035
 
-Deep Network (normal): 512-512-512-512-1 5 layers -0.173039981369 - 0.174571540566
+Deep Network (normal): 512-512-512-512-1 5 layers -0.173039981369 - 0.174571540566 - 0.173457814642
 
-Deep Network Adaptation: 512-512-512-512-1 5layers - 0.213737021682 - 0.218320387075
+Deep Network Adaptation: 512-512-512-512-1 5layers - 0.213737021682 - 0.218320387075 - 0.221980683165
 
 
 
@@ -674,11 +705,11 @@ Test RMSE: 0.219251055049 - from scratch
 
 Deep GPs - is running thunder 5.
 
-('Test RMSE 10:', 0.21032053974189471, 'dgp1 (sgp+adam)')
+('Test RMSE 100:', 0.21032053974189471, 'dgp1 (sgp+adam)')
 
-('Test RMSE 10:', 0.22188420491117991, 'dgp2') 
+('Test RMSE 100:', 0.22188420491117991, 'dgp2') 
 
-('Test RMSE 10:', 0.22457417915245484, 'dgp3') 
+('Test RMSE 100:', 0.22457417915245484, 'dgp3') 
 
 -------------------
 
@@ -702,6 +733,9 @@ Decision Tree
 
 WMT 2015 - spanish - 0.187095134667
 
+WMT 2015 - Spanish adaptation - 0.196092144759
+
+
 WMT 2017 De-En: 0.184066768475
 
 WMT 2017 En-DE: 0.178836140506
@@ -710,25 +744,7 @@ WMT 2017 DE-EN and adaptation: 0.214170907099
 
 WMT 2016 Adaptation: 0.190259731417
 
-WMT 2015 - Spanish adaptation - 0.196092144759
 
-
-
-
-----------------------
-Relevance Vector Machine
-
-WMT 2015 Spanish 0.184874995567
-
-Spanish Adaptation 0.211766504431
-
-WMT 2017 De-En: 0.175447055682
-
-WMT 2017 DE-EN and adaptation: 0.219236638399?
-
-WMT 2016 Adaptation: 0.198783201642
-
-WMT 2017 En-De: 0.175761239079
 
 
 
@@ -747,6 +763,23 @@ WMT 2017 EN-DE: 0.171446460982
 WMT 2017 DE-EN adaptation: 0.209265164046
 
 WMT 2017 EN-De: 0.171446460982
+
+
+----------------------
+Relevance Vector Machine
+
+WMT 2015 Spanish 0.184874995567
+
+Spanish Adaptation 0.211766504431
+
+WMT 2017 De-En: 0.175447055682
+
+WMT 2017 DE-EN and adaptation: 0.219236638399?
+
+WMT 2016 Adaptation: 0.198783201642
+
+WMT 2017 En-De: 0.175761239079
+
 
 ------- SVR ---------
 
